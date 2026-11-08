@@ -1,0 +1,61 @@
+<?xml version="1.0" ?>
+<sdf version="1.9">
+  <world name="uav_aerial_surveillance_world">
+    <physics name="dart_200hz" type="dart">
+      <max_step_size>0.005</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+    </physics>
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics"/>
+    <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+    <plugin filename="gz-sim-imu-system" name="gz::sim::systems::Imu"/>
+
+    <light type="directional" name="sun">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 40 0 0 0</pose>
+      <diffuse>0.9 0.9 0.9 1</diffuse>
+      <specular>0.3 0.3 0.3 1</specular>
+      <direction>-0.4 0.2 -0.9</direction>
+    </light>
+
+    <!-- Urban Occlusion Pillars and Foliage Clutter Zone -->
+    <model name="urban_occlusion_pillar_west">
+      <static>true</static>
+      <pose>16.0 -2.0 5.0 0 0 0</pose>
+      <link name="link">
+        <collision name="col"><geometry><box><size>2.2 2.2 10.0</size></box></geometry></collision>
+        <visual name="vis"><geometry><box><size>2.2 2.2 10.0</size></box></geometry></visual>
+      </link>
+    </model>
+
+    <model name="urban_occlusion_pillar_east">
+      <static>true</static>
+      <pose>22.5 3.5 5.5 0 0 0</pose>
+      <link name="link">
+        <collision name="col"><geometry><box><size>2.5 2.5 11.0</size></box></geometry></collision>
+        <visual name="vis"><geometry><box><size>2.5 2.5 11.0</size></box></geometry></visual>
+      </link>
+    </model>
+
+    <!-- Observer Camera Platform (30 Hz RGB + 200 Hz 6-Axis IMU) -->
+    <model name="observer_gimbal_platform">
+      <pose>0 0 3.5 0 0 0</pose>
+      <link name="camera_imu_link">
+        <sensor name="rgb_camera_30hz" type="camera">
+          <always_on>1</always_on>
+          <update_rate>30</update_rate>
+          <camera>
+            <horizontal_fov>1.36136</horizontal_fov>
+            <image><width>1280</width><height>720</height><format>R8G8B8</format></image>
+            <clip><near>0.2</near><far>120.0</far></clip>
+          </camera>
+        </sensor>
+        <sensor name="imu_200hz" type="imu">
+          <always_on>1</always_on>
+          <update_rate>200</update_rate>
+        </sensor>
+      </link>
+    </model>
+  </world>
+</sdf>
