@@ -1,7 +1,7 @@
 """
 YOLOv8n-P2 Small-UAV Detection Module with Wise-IoU v3 Loss and C2f-Ghost Blocks.
 Authors: Javeria Dawood, Syed Ali Turab Kazmi, Amber Saeed
-Department of Robotics & Intelligent Systems, Bahria University, Islamabad
+Department of Electrical Engineering, Bahria University, Islamabad
 """
 
 import math

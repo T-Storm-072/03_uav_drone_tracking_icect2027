@@ -3,9 +3,9 @@
 Official repository for our paper prepared for the **5th International Conference on Engineering & Computing Technologies (ICECT 2027)** at NUML, Islamabad, Pakistan.
 
 ## Authors
-* **Javeria Dawood** — Department of Robotics & Intelligent Systems, Bahria School of Engineering and Applied Sciences (BSEAS), Bahria University, Islamabad (`javeriadawood433@gmail.com`)
-* **Syed Ali Turab Kazmi** — Department of Robotics & Intelligent Systems, Bahria School of Engineering and Applied Sciences (BSEAS), Bahria University, Islamabad (`syedaliturab072@gmail.com`)
-* **Amber Saeed** — Department of Robotics & Intelligent Systems, Bahria School of Engineering and Applied Sciences (BSEAS), Bahria University, Islamabad (`ambersaeed2005@gmail.com`)
+* **Javeria Dawood** — Department of Electrical Engineering, Bahria School of Engineering and Applied Sciences (BSEAS), Bahria University, Islamabad (`javeriadawood433@gmail.com`)
+* **Syed Ali Turab Kazmi** — Department of Electrical Engineering, Bahria School of Engineering and Applied Sciences (BSEAS), Bahria University, Islamabad (`syedaliturab072@gmail.com`)
+* **Amber Saeed** — Department of Electrical Engineering, Bahria School of Engineering and Applied Sciences (BSEAS), Bahria University, Islamabad (`ambersaeed2005@gmail.com`)
 
 ---
 

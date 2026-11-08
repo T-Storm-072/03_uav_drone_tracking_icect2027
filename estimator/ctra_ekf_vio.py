@@ -2,7 +2,7 @@
 3D Constant-Turn-Rate and Acceleration Extended Kalman Filter (CTRA-EKF)
 with Tightly Coupled Monocular VIO Ego-Motion Compensation.
 Authors: Javeria Dawood, Syed Ali Turab Kazmi, Amber Saeed
-Department of Robotics & Intelligent Systems, Bahria University, Islamabad
+Department of Electrical Engineering, Bahria University, Islamabad
 """
 
 import math

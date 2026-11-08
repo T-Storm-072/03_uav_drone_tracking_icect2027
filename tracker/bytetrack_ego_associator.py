@@ -1,7 +1,7 @@
 """
 Ego-Motion Compensated Two-Stage ByteTrack Multi-Object Associator.
 Authors: Javeria Dawood, Syed Ali Turab Kazmi, Amber Saeed
-Department of Robotics & Intelligent Systems, Bahria University, Islamabad
+Department of Electrical Engineering, Bahria University, Islamabad
 """
 
 from dataclasses import dataclass
