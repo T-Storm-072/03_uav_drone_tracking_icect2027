@@ -1,0 +1,5 @@
+config_id,pipeline_description,MOTA_pct,IDF1_pct,HOTA_pct,IDSW,RMSE_1s_m,RMSE_2s_m,RMSE_3s_m,FPS_RTX3060,FPS_OrinNano
+M0,YOLOv8n + Standard Kalman SORT (No VIO),64.2,58.5,52.1,38,0.79,1.98,3.42,196.1,68.4
+M1,YOLOv8n-P2 + ByteTrack (2D Linear KF No VIO),76.8,74.1,65.4,22,0.68,1.74,3.05,178.6,61.2
+M2,YOLOv8n-P2 + ByteTrack + VIO Ego-Comp + Linear KF,84.5,83.2,73.8,14,0.48,1.15,2.09,135.1,49.0
+M3,Proposed: YOLOv8n-P2 + ByteTrack + VIO + 3D CTRA-EKF,89.4,91.2,81.6,8,0.19,0.36,0.61,128.2,46.1
